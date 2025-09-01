@@ -1,0 +1,28 @@
+{
+  "name": "btnhom2",
+  "version": "1.0.0",
+  "description": "Bai tap tuan 2",
+  "license": "ISC",
+  "author": "trung hao",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.4",
+    "nodemailer": "^7.0.6",
+    "sequelize": "^6.37.7",
+    "snowflake-id": "^1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
