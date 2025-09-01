@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const accountRouter = require('./router/accountRouter');
+const productRouter = require('./router/productRouter');
 const sequelize = require('./config/dbconfig');
 const cors = require('cors');
 
@@ -43,6 +44,7 @@ app.use(cors(corsOptions));
 
 // Use file api
 app.use(accountRouter);
+app.use(productRouter);
 
 // Tự động tạo bảng khi khởi động server
 sequelize.sync({ alter: true })
